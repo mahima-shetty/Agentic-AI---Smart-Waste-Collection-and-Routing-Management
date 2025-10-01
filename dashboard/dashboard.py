@@ -2,10 +2,15 @@ import streamlit as st
 import folium
 from streamlit_folium import st_folium
 import requests
+from streamlit_autorefresh import st_autorefresh
 
 API_URL = "http://127.0.0.1:8000/bins"
 
 st.title("Smart Waste Management Dashboard")
+
+# ---------------- Auto-refresh every 5 mins ----------------
+# interval=300000 ms = 5 minutes
+count = st_autorefresh(interval=10_000, limit=None, key="refresh")
 
 # ---------------- Fetch Data Function ----------------
 def fetch_data():
@@ -18,8 +23,7 @@ def fetch_data():
         return {"garbage_bins": [], "dumping_grounds": []}
 
 # Initialize session state for data
-if "data" not in st.session_state:
-    st.session_state.data = fetch_data()
+st.session_state.data = fetch_data()
 
 # ---------------- Add/Delete Bins ----------------
 st.sidebar.header("Manage Bins")
@@ -35,7 +39,7 @@ if st.sidebar.button("Add Bin"):
         res = requests.post(f"{API_URL}/add", json=payload)
         if res.status_code == 200:
             st.success(f"{new_name} added successfully")
-            st.session_state.data = fetch_data()  # Refresh data
+            st.session_state.data = fetch_data()  # Refresh data immediately
         else:
             st.error(f"Error: {res.json().get('detail')}")
     else:
@@ -49,7 +53,7 @@ if st.sidebar.button("Delete Bin"):
         res = requests.delete(f"{API_URL}/delete/{del_name.strip()}")
         if res.status_code == 200:
             st.success(f"{del_name} deleted successfully")
-            st.session_state.data = fetch_data()  # Refresh data
+            st.session_state.data = fetch_data()  # Refresh data immediately
         else:
             st.error(f"Error: {res.json().get('detail')}")
     else:
@@ -71,12 +75,21 @@ for d in st.session_state.data.get("dumping_grounds", []):
         icon=folium.Icon(color='green', icon='leaf')
     ).add_to(m)
 
-# Garbage bins
+# Garbage bins with dynamic fill color
 for b in st.session_state.data.get("garbage_bins", []):
+    fill = b.get("fill_level", 0)
+    # Determine marker color based on fill level
+    if fill < 50:
+        color = "green"
+    elif fill < 80:
+        color = "orange"
+    else:
+        color = "red"
+
     folium.Marker(
         location=[b["latitude"], b["longitude"]],
-        popup=b["name"],
-        icon=folium.Icon(color='gray', icon='trash')
+        popup=f"{b['name']} - {fill}%",
+        icon=folium.Icon(color=color, icon='trash')
     ).add_to(m)
 
 st_folium(m, width=700, height=500)

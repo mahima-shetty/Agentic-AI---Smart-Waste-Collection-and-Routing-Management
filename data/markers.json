@@ -20,62 +20,74 @@
         {
             "name": "Dustbin 1",
             "latitude": 19.168254558644758,
-            "longitude": 72.94358994398651
+            "longitude": 72.94358994398651,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 2",
             "latitude": 19.151482656453155,
-            "longitude": 72.93089775714564
+            "longitude": 72.93089775714564,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 3",
             "latitude": 19.133186041131196,
-            "longitude": 72.91972681628498
+            "longitude": 72.91972681628498,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 4",
             "latitude": 19.110947837238985,
-            "longitude": 72.90388294346644
+            "longitude": 72.90388294346644,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 5",
             "latitude": 19.090620776292223,
-            "longitude": 72.89539585798067
+            "longitude": 72.89539585798067,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 6",
             "latitude": 19.074279678172953,
-            "longitude": 72.8824762991172
+            "longitude": 72.8824762991172,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 7",
             "latitude": 19.053765756330648,
-            "longitude": 72.87299399035572
+            "longitude": 72.87299399035572,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 8",
             "latitude": 19.044343841645652,
-            "longitude": 72.84959187636798
+            "longitude": 72.84959187636798,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 9",
             "latitude": 19.01994163371838,
-            "longitude": 72.83524834670496
+            "longitude": 72.83524834670496,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 10",
             "latitude": 18.99834970327438,
-            "longitude": 72.82109474837868
+            "longitude": 72.82109474837868,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 11",
             "latitude": 18.972468914623537,
-            "longitude": 72.81590357906927
+            "longitude": 72.81590357906927,
+            "fill_level": 100
         },
         {
             "name": "Dustbin 12",
             "latitude": 18.931362829906853,
-            "longitude": 72.83573885104937
+            "longitude": 72.83573885104937,
+            "fill_level": 100
         }
     ]
 }
