@@ -1,81 +1,81 @@
 {
-  "dumping_grounds": [
-    {
-      "name": "Mulund Dumping Ground",
-      "latitude": 19.172972872270734,
-      "longitude": 72.97674663940518
-    },
-    {
-      "name": "BMC Dumping Ground",
-      "latitude": 19.123231972026957,
-      "longitude": 72.95404179025559
-    },
-    {
-      "name": "Deonar Dumping Ground",
-      "latitude": 19.071892501022422,
-      "longitude": 72.92989606399117
-    }
-  ],
-  "garbage_bins": [
-    {
-      "name": "Dustbin 1",
-      "latitude": 19.168254558644758,
-      "longitude": 72.94358994398651
-    },
-    {
-      "name": "Dustbin 2",
-      "latitude": 19.151482656453155,
-      "longitude": 72.93089775714564
-    },
-    {
-      "name": "Dustbin 3",
-      "latitude": 19.133186041131196,
-      "longitude": 72.91972681628498
-    },
-    {
-      "name": "Dustbin 4",
-      "latitude": 19.110947837238985,
-      "longitude": 72.90388294346644
-    },
-    {
-      "name": "Dustbin 5",
-      "latitude": 19.090620776292223,
-      "longitude": 72.89539585798067
-    },
-    {
-      "name": "Dustbin 6",
-      "latitude": 19.074279678172953,
-      "longitude": 72.8824762991172
-    },
-    {
-      "name": "Dustbin 7",
-      "latitude": 19.053765756330648,
-      "longitude": 72.87299399035572
-    },
-    {
-      "name": "Dustbin 8",
-      "latitude": 19.044343841645652,
-      "longitude": 72.84959187636798
-    },
-    {
-      "name": "Dustbin 9",
-      "latitude": 19.01994163371838,
-      "longitude": 72.83524834670496
-    },
-    {
-      "name": "Dustbin 10",
-      "latitude": 18.99834970327438,
-      "longitude": 72.82109474837868
-    },
-    {
-      "name": "Dustbin 11",
-      "latitude": 18.972468914623537,
-      "longitude": 72.81590357906927
-    },
-    {
-      "name": "Dustbin 12",
-      "latitude": 18.95575243894783,
-      "longitude": 72.83563729400159
-    }
-  ]
+    "dumping_grounds": [
+        {
+            "name": "Mulund Dumping Ground",
+            "latitude": 19.172972872270734,
+            "longitude": 72.97674663940518
+        },
+        {
+            "name": "BMC Dumping Ground",
+            "latitude": 19.123231972026957,
+            "longitude": 72.95404179025559
+        },
+        {
+            "name": "Deonar Dumping Ground",
+            "latitude": 19.071892501022422,
+            "longitude": 72.92989606399117
+        }
+    ],
+    "garbage_bins": [
+        {
+            "name": "Dustbin 1",
+            "latitude": 19.168254558644758,
+            "longitude": 72.94358994398651
+        },
+        {
+            "name": "Dustbin 2",
+            "latitude": 19.151482656453155,
+            "longitude": 72.93089775714564
+        },
+        {
+            "name": "Dustbin 3",
+            "latitude": 19.133186041131196,
+            "longitude": 72.91972681628498
+        },
+        {
+            "name": "Dustbin 4",
+            "latitude": 19.110947837238985,
+            "longitude": 72.90388294346644
+        },
+        {
+            "name": "Dustbin 5",
+            "latitude": 19.090620776292223,
+            "longitude": 72.89539585798067
+        },
+        {
+            "name": "Dustbin 6",
+            "latitude": 19.074279678172953,
+            "longitude": 72.8824762991172
+        },
+        {
+            "name": "Dustbin 7",
+            "latitude": 19.053765756330648,
+            "longitude": 72.87299399035572
+        },
+        {
+            "name": "Dustbin 8",
+            "latitude": 19.044343841645652,
+            "longitude": 72.84959187636798
+        },
+        {
+            "name": "Dustbin 9",
+            "latitude": 19.01994163371838,
+            "longitude": 72.83524834670496
+        },
+        {
+            "name": "Dustbin 10",
+            "latitude": 18.99834970327438,
+            "longitude": 72.82109474837868
+        },
+        {
+            "name": "Dustbin 11",
+            "latitude": 18.972468914623537,
+            "longitude": 72.81590357906927
+        },
+        {
+            "name": "Dustbin 12",
+            "latitude": 18.931362829906853,
+            "longitude": 72.83573885104937
+        }
+    ]
 }
