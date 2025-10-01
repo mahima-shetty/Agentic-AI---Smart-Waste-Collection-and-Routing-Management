@@ -21,7 +21,6 @@ app.add_middleware(
 DATA_FILE = Path(__file__).parent.parent / "data" / "markers.json"
 
 # ---------------- Utility functions ----------------
-
 def load_data():
     with open(DATA_FILE, "r") as f:
         return json.load(f)
@@ -30,6 +29,7 @@ def save_data(data):
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=4)
 
+# ---------------- Bin Fill Simulator ----------------
 def update_bin_fill():
     """Simulate bin fill levels incrementing every 5 minutes"""
     data = load_data()
@@ -51,15 +51,13 @@ def start_fill_simulator():
     def run():
         while True:
             update_bin_fill()
-            time.sleep(10)  # 10 secs
+            time.sleep(300)  # 5 minutes
     t = threading.Thread(target=run, daemon=True)
     t.start()
 
-# Start simulator on server startup
 start_fill_simulator()
 
 # ------------------- Endpoints -------------------
-
 @app.get("/")
 def root():
     return {"message": "Smart Waste Management API is running"}
