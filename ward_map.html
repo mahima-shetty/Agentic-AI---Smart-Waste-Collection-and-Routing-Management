@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e8d0b11577153c93d140b08ebe2cfb3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6e8d0b11577153c93d140b08ebe2cfb3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6e8d0b11577153c93d140b08ebe2cfb3 = L.map(
+                "map_6e8d0b11577153c93d140b08ebe2cfb3",
+                {
+                    center: [19.076, 72.8777],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6bea73240914266ef99d7299f155a159 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6bea73240914266ef99d7299f155a159.addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+            var marker_7857b8a765ff5a0f48c1f11d6adf164e = L.marker(
+                [19.01, 72.86],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_f066df88648eaf380938b347f3768f22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e99e9879e54fb7716db156999e41d41c = $(`<div id="html_e99e9879e54fb7716db156999e41d41c" style="width: 100.0%; height: 100.0%;">Ward 1: Amit Sharma</div>`)[0];
+                popup_f066df88648eaf380938b347f3768f22.setContent(html_e99e9879e54fb7716db156999e41d41c);
+            
+        
+
+        marker_7857b8a765ff5a0f48c1f11d6adf164e.bindPopup(popup_f066df88648eaf380938b347f3768f22)
+        ;
+
+        
+    
+    
+            var marker_afab82eeac1f610cbf001627baddeb9c = L.marker(
+                [19.02, 72.86999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_e618a693ac5d1b06e1682931b9c0086f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7d8ea954f1dd743122c4aa6f2cb8c1f = $(`<div id="html_d7d8ea954f1dd743122c4aa6f2cb8c1f" style="width: 100.0%; height: 100.0%;">Ward 2: Sneha Patel</div>`)[0];
+                popup_e618a693ac5d1b06e1682931b9c0086f.setContent(html_d7d8ea954f1dd743122c4aa6f2cb8c1f);
+            
+        
+
+        marker_afab82eeac1f610cbf001627baddeb9c.bindPopup(popup_e618a693ac5d1b06e1682931b9c0086f)
+        ;
+
+        
+    
+    
+            var marker_28d856d8b6ecb6103f6d133f9c7a69cd = L.marker(
+                [19.03, 72.88],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_fedb25f6321458ba82be26a646eaa548 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30eaf8407d787edacb6962b792d45f49 = $(`<div id="html_30eaf8407d787edacb6962b792d45f49" style="width: 100.0%; height: 100.0%;">Ward 3: Ravi Iyer</div>`)[0];
+                popup_fedb25f6321458ba82be26a646eaa548.setContent(html_30eaf8407d787edacb6962b792d45f49);
+            
+        
+
+        marker_28d856d8b6ecb6103f6d133f9c7a69cd.bindPopup(popup_fedb25f6321458ba82be26a646eaa548)
+        ;
+
+        
+    
+    
+            var marker_4833ce5e8c95b796accc21ecde234d52 = L.marker(
+                [19.04, 72.89],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_d45f217da935b58bf99e1d514401440c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0663dcf2cba2fff179461130a69acf6f = $(`<div id="html_0663dcf2cba2fff179461130a69acf6f" style="width: 100.0%; height: 100.0%;">Ward 4: Pooja Mehta</div>`)[0];
+                popup_d45f217da935b58bf99e1d514401440c.setContent(html_0663dcf2cba2fff179461130a69acf6f);
+            
+        
+
+        marker_4833ce5e8c95b796accc21ecde234d52.bindPopup(popup_d45f217da935b58bf99e1d514401440c)
+        ;
+
+        
+    
+    
+            var marker_95b467d2066c2d96e4022efba49fe8b7 = L.marker(
+                [19.05, 72.89999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_927a0ab8fc3bda1e6303601d4ba9cd32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8c0253f0e5e30ea5d2174b45ae9946f = $(`<div id="html_f8c0253f0e5e30ea5d2174b45ae9946f" style="width: 100.0%; height: 100.0%;">Ward 5: Rajesh Nair</div>`)[0];
+                popup_927a0ab8fc3bda1e6303601d4ba9cd32.setContent(html_f8c0253f0e5e30ea5d2174b45ae9946f);
+            
+        
+
+        marker_95b467d2066c2d96e4022efba49fe8b7.bindPopup(popup_927a0ab8fc3bda1e6303601d4ba9cd32)
+        ;
+
+        
+    
+    
+            var marker_8d76abf936af1afe4dca0e55c9654f8f = L.marker(
+                [19.06, 72.91],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_41d70e286dcd04a2621d465667ae8d0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_953530468324ad6b5029d298dcf7c137 = $(`<div id="html_953530468324ad6b5029d298dcf7c137" style="width: 100.0%; height: 100.0%;">Ward 6: Meena Joshi</div>`)[0];
+                popup_41d70e286dcd04a2621d465667ae8d0a.setContent(html_953530468324ad6b5029d298dcf7c137);
+            
+        
+
+        marker_8d76abf936af1afe4dca0e55c9654f8f.bindPopup(popup_41d70e286dcd04a2621d465667ae8d0a)
+        ;
+
+        
+    
+    
+            var marker_71af577e69a797c6729e71d52a317ea0 = L.marker(
+                [19.07, 72.91999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_e684121a92e7ed48f148ccd179f27c0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b5932631312ca44a4c4e930030ec754 = $(`<div id="html_2b5932631312ca44a4c4e930030ec754" style="width: 100.0%; height: 100.0%;">Ward 7: Arun Verma</div>`)[0];
+                popup_e684121a92e7ed48f148ccd179f27c0c.setContent(html_2b5932631312ca44a4c4e930030ec754);
+            
+        
+
+        marker_71af577e69a797c6729e71d52a317ea0.bindPopup(popup_e684121a92e7ed48f148ccd179f27c0c)
+        ;
+
+        
+    
+    
+            var marker_5d746390a84b0ce189173a65bbeb41d5 = L.marker(
+                [19.08, 72.92999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_51668b160a64f967da5eb415ddb54c2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06dd5ed6cc4a79b07e674830a1f4cb73 = $(`<div id="html_06dd5ed6cc4a79b07e674830a1f4cb73" style="width: 100.0%; height: 100.0%;">Ward 8: Kiran Rao</div>`)[0];
+                popup_51668b160a64f967da5eb415ddb54c2a.setContent(html_06dd5ed6cc4a79b07e674830a1f4cb73);
+            
+        
+
+        marker_5d746390a84b0ce189173a65bbeb41d5.bindPopup(popup_51668b160a64f967da5eb415ddb54c2a)
+        ;
+
+        
+    
+    
+            var marker_9cdb070ff3dc233e502b38df72ace4e0 = L.marker(
+                [19.09, 72.94],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_f9bdae62a1f54cb085e374ff210b428b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b2111e9b23221fe61ee2a791288ca59 = $(`<div id="html_0b2111e9b23221fe61ee2a791288ca59" style="width: 100.0%; height: 100.0%;">Ward 9: Deepa Kulkarni</div>`)[0];
+                popup_f9bdae62a1f54cb085e374ff210b428b.setContent(html_0b2111e9b23221fe61ee2a791288ca59);
+            
+        
+
+        marker_9cdb070ff3dc233e502b38df72ace4e0.bindPopup(popup_f9bdae62a1f54cb085e374ff210b428b)
+        ;
+
+        
+    
+    
+            var marker_9dde911ce0f6ba9665a99fd2756d4196 = L.marker(
+                [19.1, 72.94999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_2d506852412b5a898376e2974dd6cd5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6205dffacaf09bdfd59b134ef8a62f50 = $(`<div id="html_6205dffacaf09bdfd59b134ef8a62f50" style="width: 100.0%; height: 100.0%;">Ward 10: Suresh Yadav</div>`)[0];
+                popup_2d506852412b5a898376e2974dd6cd5c.setContent(html_6205dffacaf09bdfd59b134ef8a62f50);
+            
+        
+
+        marker_9dde911ce0f6ba9665a99fd2756d4196.bindPopup(popup_2d506852412b5a898376e2974dd6cd5c)
+        ;
+
+        
+    
+    
+            var marker_c96e0d9cac6a81857f9abf2a81678c2b = L.marker(
+                [19.11, 72.96],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_9fbc225ad808b2fec85b024e50648d53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_204c2ae69f58a947fdbfd937156942ba = $(`<div id="html_204c2ae69f58a947fdbfd937156942ba" style="width: 100.0%; height: 100.0%;">Ward 11: Nita Deshmukh</div>`)[0];
+                popup_9fbc225ad808b2fec85b024e50648d53.setContent(html_204c2ae69f58a947fdbfd937156942ba);
+            
+        
+
+        marker_c96e0d9cac6a81857f9abf2a81678c2b.bindPopup(popup_9fbc225ad808b2fec85b024e50648d53)
+        ;
+
+        
+    
+    
+            var marker_273479710e046a43ff40d165f490734d = L.marker(
+                [19.12, 72.97],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_5ea6768257c09bae0f5d789fe2115d1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cff400164e35942a9d1aba5ceaed37d5 = $(`<div id="html_cff400164e35942a9d1aba5ceaed37d5" style="width: 100.0%; height: 100.0%;">Ward 12: Mahesh Gupta</div>`)[0];
+                popup_5ea6768257c09bae0f5d789fe2115d1e.setContent(html_cff400164e35942a9d1aba5ceaed37d5);
+            
+        
+
+        marker_273479710e046a43ff40d165f490734d.bindPopup(popup_5ea6768257c09bae0f5d789fe2115d1e)
+        ;
+
+        
+    
+    
+            var marker_b827f6797ac6455d29caeb25e2004515 = L.marker(
+                [19.13, 72.97999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_2594c76ee593f0dcd78cf8bd42a03cb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_662013f034348658a9eb31be2ee1207b = $(`<div id="html_662013f034348658a9eb31be2ee1207b" style="width: 100.0%; height: 100.0%;">Ward 13: Anjali Pillai</div>`)[0];
+                popup_2594c76ee593f0dcd78cf8bd42a03cb4.setContent(html_662013f034348658a9eb31be2ee1207b);
+            
+        
+
+        marker_b827f6797ac6455d29caeb25e2004515.bindPopup(popup_2594c76ee593f0dcd78cf8bd42a03cb4)
+        ;
+
+        
+    
+    
+            var marker_4f4070c1a20a272a6f68b4fe7f2af163 = L.marker(
+                [19.14, 72.99],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_a2e4bc3ed893e8c626ed36c3bd4cdc22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bec788c30383d796c34464a616c23897 = $(`<div id="html_bec788c30383d796c34464a616c23897" style="width: 100.0%; height: 100.0%;">Ward 14: Rakesh Singh</div>`)[0];
+                popup_a2e4bc3ed893e8c626ed36c3bd4cdc22.setContent(html_bec788c30383d796c34464a616c23897);
+            
+        
+
+        marker_4f4070c1a20a272a6f68b4fe7f2af163.bindPopup(popup_a2e4bc3ed893e8c626ed36c3bd4cdc22)
+        ;
+
+        
+    
+    
+            var marker_77f804ee5dbf129dfabc4855f3e9692f = L.marker(
+                [19.15, 73.0],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_6aaacf616a9c92f8bce0d6b3ffc77da5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_903b226fb6073ca6ea7c9d6762d66b91 = $(`<div id="html_903b226fb6073ca6ea7c9d6762d66b91" style="width: 100.0%; height: 100.0%;">Ward 15: Sunita Ghosh</div>`)[0];
+                popup_6aaacf616a9c92f8bce0d6b3ffc77da5.setContent(html_903b226fb6073ca6ea7c9d6762d66b91);
+            
+        
+
+        marker_77f804ee5dbf129dfabc4855f3e9692f.bindPopup(popup_6aaacf616a9c92f8bce0d6b3ffc77da5)
+        ;
+
+        
+    
+    
+            var marker_f62438b06ab06f54902c248641c70650 = L.marker(
+                [19.16, 73.00999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_30a3e9493a9d0467654badfab7397682 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c111784bca707f7b58325a9bb955ad7 = $(`<div id="html_2c111784bca707f7b58325a9bb955ad7" style="width: 100.0%; height: 100.0%;">Ward 16: Vikram Das</div>`)[0];
+                popup_30a3e9493a9d0467654badfab7397682.setContent(html_2c111784bca707f7b58325a9bb955ad7);
+            
+        
+
+        marker_f62438b06ab06f54902c248641c70650.bindPopup(popup_30a3e9493a9d0467654badfab7397682)
+        ;
+
+        
+    
+    
+            var marker_b89ffafd074a05a9d2a255f00c4e7564 = L.marker(
+                [19.17, 73.02],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_0c94ee1d78745f522770d9d9cf62135b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b636a6c662d743618f2c51ef257a8c6c = $(`<div id="html_b636a6c662d743618f2c51ef257a8c6c" style="width: 100.0%; height: 100.0%;">Ward 17: Priya Banerjee</div>`)[0];
+                popup_0c94ee1d78745f522770d9d9cf62135b.setContent(html_b636a6c662d743618f2c51ef257a8c6c);
+            
+        
+
+        marker_b89ffafd074a05a9d2a255f00c4e7564.bindPopup(popup_0c94ee1d78745f522770d9d9cf62135b)
+        ;
+
+        
+    
+    
+            var marker_39b845b961f1891bf3b36252a3cc761e = L.marker(
+                [19.18, 73.03],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_7e5511855139f066630ca4589295f674 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42dea87de69ff6bc00e10161718a0523 = $(`<div id="html_42dea87de69ff6bc00e10161718a0523" style="width: 100.0%; height: 100.0%;">Ward 18: Ankit Tiwari</div>`)[0];
+                popup_7e5511855139f066630ca4589295f674.setContent(html_42dea87de69ff6bc00e10161718a0523);
+            
+        
+
+        marker_39b845b961f1891bf3b36252a3cc761e.bindPopup(popup_7e5511855139f066630ca4589295f674)
+        ;
+
+        
+    
+    
+            var marker_4979ef3cb4dfab8f5278d1fce686812b = L.marker(
+                [19.19, 73.03999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_8b122104dc2d7c959404d6db148f58c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_539a7770874b158bb7c334fede56738e = $(`<div id="html_539a7770874b158bb7c334fede56738e" style="width: 100.0%; height: 100.0%;">Ward 19: Kavita Rao</div>`)[0];
+                popup_8b122104dc2d7c959404d6db148f58c9.setContent(html_539a7770874b158bb7c334fede56738e);
+            
+        
+
+        marker_4979ef3cb4dfab8f5278d1fce686812b.bindPopup(popup_8b122104dc2d7c959404d6db148f58c9)
+        ;
+
+        
+    
+    
+            var marker_4e07c24f335e4c033d17889efd1f7887 = L.marker(
+                [19.2, 73.05],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_18a9cdf743db82c93d1c8e3f8aaa81c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf92863872067f5bbeea2394c873c0bb = $(`<div id="html_cf92863872067f5bbeea2394c873c0bb" style="width: 100.0%; height: 100.0%;">Ward 20: Rohit Shetty</div>`)[0];
+                popup_18a9cdf743db82c93d1c8e3f8aaa81c2.setContent(html_cf92863872067f5bbeea2394c873c0bb);
+            
+        
+
+        marker_4e07c24f335e4c033d17889efd1f7887.bindPopup(popup_18a9cdf743db82c93d1c8e3f8aaa81c2)
+        ;
+
+        
+    
+    
+            var marker_fc4c44a4bf30d9da2ff6cce49e6c6a98 = L.marker(
+                [19.21, 73.05999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_8ed290e792bc45487c0f6830643b467d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb5db2e6c76270f38ba5b43a4d9df5d1 = $(`<div id="html_eb5db2e6c76270f38ba5b43a4d9df5d1" style="width: 100.0%; height: 100.0%;">Ward 21: Divya Menon</div>`)[0];
+                popup_8ed290e792bc45487c0f6830643b467d.setContent(html_eb5db2e6c76270f38ba5b43a4d9df5d1);
+            
+        
+
+        marker_fc4c44a4bf30d9da2ff6cce49e6c6a98.bindPopup(popup_8ed290e792bc45487c0f6830643b467d)
+        ;
+
+        
+    
+    
+            var marker_63b4d0b216ece4e950ddaa31676ec43a = L.marker(
+                [19.22, 73.07],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_86d68872b354321d6f66f84c8ae132e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82d04b69d7d22a92687763a47f035a18 = $(`<div id="html_82d04b69d7d22a92687763a47f035a18" style="width: 100.0%; height: 100.0%;">Ward 22: Sameer Chatterjee</div>`)[0];
+                popup_86d68872b354321d6f66f84c8ae132e1.setContent(html_82d04b69d7d22a92687763a47f035a18);
+            
+        
+
+        marker_63b4d0b216ece4e950ddaa31676ec43a.bindPopup(popup_86d68872b354321d6f66f84c8ae132e1)
+        ;
+
+        
+    
+    
+            var marker_71b4bfdf3ae5e7f38a164470140e210b = L.marker(
+                [19.23, 73.08],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_256e627cd1be8bc752fce84be58a1ec3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04f3932385d2dba1a442f4669c463a92 = $(`<div id="html_04f3932385d2dba1a442f4669c463a92" style="width: 100.0%; height: 100.0%;">Ward 23: Asha Reddy</div>`)[0];
+                popup_256e627cd1be8bc752fce84be58a1ec3.setContent(html_04f3932385d2dba1a442f4669c463a92);
+            
+        
+
+        marker_71b4bfdf3ae5e7f38a164470140e210b.bindPopup(popup_256e627cd1be8bc752fce84be58a1ec3)
+        ;
+
+        
+    
+    
+            var marker_103cd3c83fb2d66f5554c0e591052aea = L.marker(
+                [19.24, 73.08999999999999],
+                {
+}
+            ).addTo(map_6e8d0b11577153c93d140b08ebe2cfb3);
+        
+    
+        var popup_140e1ce00bca74ffa83c8c3bd6c3a363 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a5658872bf36f5b932acdcd2d493148 = $(`<div id="html_8a5658872bf36f5b932acdcd2d493148" style="width: 100.0%; height: 100.0%;">Ward 24: Vivek Bansal</div>`)[0];
+                popup_140e1ce00bca74ffa83c8c3bd6c3a363.setContent(html_8a5658872bf36f5b932acdcd2d493148);
+            
+        
+
+        marker_103cd3c83fb2d66f5554c0e591052aea.bindPopup(popup_140e1ce00bca74ffa83c8c3bd6c3a363)
+        ;
+
+        
+    
+</script>
+</html>
