@@ -1,0 +1,182 @@
+{
+  "system": {
+    "name": "Smart Waste Management System",
+    "version": "1.0.0",
+    "environment": "development"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "db": 0,
+    "connection_timeout": 5,
+    "socket_timeout": 5,
+    "retry_attempts": 3,
+    "retry_delay": 1
+  },
+  "chromadb": {
+    "persist_directory": "data/chromadb",
+    "collections": {
+      "route_patterns": {
+        "description": "Optimized route patterns and historical data",
+        "embedding_function": "default"
+      },
+      "alert_patterns": {
+        "description": "Alert patterns and overflow prediction data",
+        "embedding_function": "default"
+      },
+      "analytics_insights": {
+        "description": "Analytics insights and performance metrics",
+        "embedding_function": "default"
+      },
+      "bin_behaviors": {
+        "description": "Bin fill patterns and behavioral data",
+        "embedding_function": "default"
+      },
+      "agent_conversations": {
+        "description": "Agent conversation history and context",
+        "embedding_function": "default"
+      }
+    }
+  },
+  "mcp_protocol": {
+    "channels": {
+      "route_optimization": "mcp:route_optimization",
+      "alert_management": "mcp:alert_management",
+      "analytics": "mcp:analytics",
+      "bin_simulation": "mcp:bin_simulation",
+      "master_coordination": "mcp:master_coordination"
+    },
+    "message_timeout": 30,
+    "max_retries": 3,
+    "heartbeat_interval": 60
+  },
+  "agents": {
+    "master_coordination": {
+      "enabled": true,
+      "capabilities": [
+        "agent_coordination",
+        "task_distribution",
+        "failure_handling",
+        "system_monitoring",
+        "natural_language_processing"
+      ]
+    },
+    "route_optimization": {
+      "enabled": true,
+      "capabilities": [
+        "route_planning",
+        "vrp_solving",
+        "optimization",
+        "multi_vehicle_coordination"
+      ]
+    },
+    "alert_management": {
+      "enabled": true,
+      "capabilities": [
+        "overflow_prediction",
+        "alert_generation",
+        "escalation",
+        "priority_management"
+      ]
+    },
+    "analytics": {
+      "enabled": true,
+      "capabilities": [
+        "data_analysis",
+        "reporting",
+        "insights",
+        "visualization"
+      ]
+    },
+    "bin_simulation": {
+      "enabled": true,
+      "capabilities": [
+        "data_simulation",
+        "iot_emulation",
+        "pattern_generation"
+      ]
+    }
+  },
+  "ui_themes": {
+    "default": {
+      "primary_color": "#1f77b4",
+      "background_color": "#ffffff",
+      "secondary_color": "#ff7f0e",
+      "text_color": "#333333"
+    },
+    "dark": {
+      "primary_color": "#4CAF50",
+      "background_color": "#1e1e1e",
+      "secondary_color": "#FFC107",
+      "text_color": "#ffffff"
+    }
+  },
+  "alert_rules": {
+    "overflow_warning_threshold": 85,
+    "overflow_critical_threshold": 95,
+    "prediction_horizon_hours": 4,
+    "escalation_delay_minutes": 30,
+    "notification_methods": ["dashboard", "email"],
+    "priority_levels": {
+      "low": 1,
+      "medium": 2,
+      "high": 3,
+      "critical": 4,
+      "emergency": 5
+    }
+  },
+  "optimization_parameters": {
+    "vrp_solver": {
+      "time_limit_seconds": 300,
+      "max_vehicles": 10,
+      "depot_location": [19.0760, 72.8777],
+      "vehicle_capacity": 1000,
+      "max_route_duration_hours": 8
+    },
+    "ml_models": {
+      "prediction_model_update_interval_hours": 24,
+      "training_data_retention_days": 90,
+      "model_accuracy_threshold": 0.85
+    }
+  },
+  "database": {
+    "sqlite": {
+      "path": "backend/db/waste_management.db",
+      "backup_interval_hours": 6,
+      "max_backup_files": 10
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "smart_waste_system.log",
+    "max_file_size_mb": 10,
+    "backup_count": 5,
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "email_notifications": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "use_tls": true,
+    "sender_email": "smartwaste.bmc@gmail.com",
+    "sender_password": "your_app_password_here",
+    "sender_name": "Smart Waste Management System - BMC Mumbai",
+    "enabled": true,
+    "retry_attempts": 3,
+    "retry_delay_minutes": 5,
+    "default_preferences": {
+      "alert_notifications": true,
+      "escalation_notifications": true,
+      "daily_reports": true,
+      "weekly_summaries": true,
+      "emergency_alerts": true,
+      "notification_frequency": "immediate",
+      "quiet_hours_start": "22:00",
+      "quiet_hours_end": "06:00"
+    },
+    "supervisor_contacts": {
+      "default_escalation_level": 1,
+      "escalation_delay_minutes": 30,
+      "max_escalation_level": 3
+    }
+  }
+}
